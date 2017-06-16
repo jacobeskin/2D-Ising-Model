@@ -1,0 +1,16 @@
+# -*-makefile-*-
+
+IsingEx.exe: mtfort90.o IsingMod.o IsingEx.o
+	gfortran -Wall -g -o IsingEx.exe mtfort90.o IsingMod.o IsingEx.o
+
+mtfort90.o: mtfort90.f90
+	gfortran -g -c mtfort90.f90
+
+IsingMod.o: IsingMod.f90
+	gfortran -g -c IsingMod.f90
+
+IsingEx.o: IsingEx.f90
+	gfortran -g -c IsingEx.f90
+
+clean:
+	rm -f *.o

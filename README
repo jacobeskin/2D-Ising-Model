@@ -1,0 +1,16 @@
+2D Ising Model.
+
+compilation: make -f makeising
+running: ./IsingEx.exe
+
+Studying the 2D Ising model with periodic boundary conditions and
+where only the four  nearest neighbours have an effect with different
+external magnetic fields and temperatures. 
+
+Visualizations of simulations are in .avi files. Spin up is blue, down is red.
+Visualizations are as follows:
+
+-zero H with low T are zeroHlowTferromagnet.avi for the ferromagnetic and 
+ lowTzeroHantiferromagnet.ave 
+-low T and low H are lowTlowHferromagnet.avi
+-high T and low H are highTlowHferromagnet.avi
